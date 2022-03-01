@@ -1,0 +1,55 @@
+@import '../../../styles/global.scss';
+section {
+    display: block;
+    height: calc(100vh - 80px);
+    background-color: $color-bg-primary;
+    background-image: url(../../../../assets/hero/hero-book.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    div.hero-contact {
+        background-color: transparent;
+        height: calc(100vh - 240px);
+        padding: $padding;
+        display: flex;
+        @media only screen and (max-width: 700px) {
+            padding: 40px;
+            height: calc(100vh - 160px);
+            display: block;
+            div.flex-fill:first-child {
+                display: none;
+                ;
+            }
+        }
+        form {
+            width: 50%;
+            min-width: 240px;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 16px;
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            @media only screen and (max-width: 420px) {
+                width: calc(100% - 40px);
+                min-width: unset;
+            }
+            input:not(.button),
+            textarea {
+                border: none;
+                border-radius: 2px;
+                width: calc(100% - 20px);
+                padding: 10px;
+                font-family: roboto;
+                color: #666;
+                font-weight: 300;
+                resize: none;
+                outline: none;
+            }
+            input:not(.button) {
+                margin-bottom: 10px;
+            }
+            textarea {
+                margin-bottom: 2px;
+            }
+        }
+    }
+}

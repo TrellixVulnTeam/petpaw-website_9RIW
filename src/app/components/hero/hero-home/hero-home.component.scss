@@ -1,0 +1,32 @@
+@import '../../../styles/global.scss';
+section {
+    display: block;
+    height: calc(100vh - 80px);
+    background-color: $color-bg-primary;
+    background-image: url(../../../../assets/hero/hero-home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    div.hero-home {
+        background-color: transparent;
+        height: calc(100% - 120px);
+        padding: $padding;
+        display: flex;
+        flex-direction: column;
+        @media only screen and (max-width: 800px) {
+            padding: 40px;
+            div.flex-fill:first-child {
+                display: none;
+                ;
+            }
+        }
+        p {
+            color: #fff;
+            font-size: $font-header-h1;
+            line-height: 1.2em;
+            @media only screen and (max-width: 600px) {
+                font-size: $font-header-h2;
+            }
+        }
+    }
+}

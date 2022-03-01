@@ -1,0 +1,21 @@
+@import '../../styles/global.scss';
+section {
+    display: block;
+    height: calc(100vh - 80px);
+    background-color: $color-bg-primary;
+    background-image: url(../../../assets/hero/hero-holding.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    div.page-not-found {
+        display: block;
+        height: calc(100vh - 160px);
+        padding: 40px;
+        h1,
+        h2,
+        p {
+            color: #fff;
+            margin-bottom: 30px;
+        }
+    }
+}

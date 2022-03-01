@@ -1,0 +1,13 @@
+<nav>
+    <button class="icon" id="nav-button" onclick="navFunction()">
+        <i class="fa fa-bars" id="nav-icon"></i>
+    </button>
+    <div class="nav-content" id="nav-content">
+        <ul id="nav-items">
+            <li><a aria-label="Home" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" title="Home">Home</a></li>
+            <li><a aria-label="Book an appointment" routerLink="/book" routerLinkActive="active" title="Book an appointment">Book an appointment</a></li>
+            <li><a aria-label="Order a prescription" routerLink="/order" routerLinkActive="active" title="Order a prescription">Order a prescription</a></li>
+            <li><a aria-label="Contact us" routerLink="/contact" routerLinkActive="active" title="Contact us">Contact us</a></li>
+        </ul>
+    </div>
+</nav>

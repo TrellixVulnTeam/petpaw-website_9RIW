@@ -1,0 +1,24 @@
+@import '../../styles/global.scss';
+section {
+    background-color: $color-bg-secondary;
+    padding: 40px;
+    div.footer {
+        text-align: center;
+        font-size: 12px;
+        div.social-links {
+            margin-bottom: 8px;
+            a {
+                margin: 0 4px;
+                padding: 10px;
+                font-size: 16px;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                border-radius: 50%;
+                text-decoration: none;
+                background-color: $color-primary;
+                color: #fff;
+            }
+        }
+    }
+}

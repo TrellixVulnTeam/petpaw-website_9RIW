@@ -1,0 +1,16 @@
+@import '../../styles/global.scss';
+section {
+    background-color: $color-primary;
+    div.header {
+        padding: 20px;
+        display: flex;
+        div.logo {
+            height: 40px;
+        }
+        app-navbar {
+            background: none;
+            flex: 1;
+            z-index: 1;
+        }
+    }
+}

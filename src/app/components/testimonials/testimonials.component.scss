@@ -1,0 +1,53 @@
+@import '../../styles/global.scss';
+section {
+    background-color: $color-primary;
+    box-shadow: 0 -1px 3px 0 rgb(0 0 0 / 30%);
+    div.testimonials {
+        padding: $padding;
+        h2 {
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 60px;
+        }
+        div.testimonial-list {
+            display: flex;
+            @media only screen and (max-width: 600px) {
+                flex-direction: column;
+            }
+            div.testimonial {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                img {
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 44px;
+                    border: 2px solid #fff;
+                    margin-bottom: 20px;
+                }
+                div.testimonial-info {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    h3,
+                    p {
+                        color: #fff;
+                    }
+                    p.testimonial-text {
+                        flex: 1;
+                    }
+                    p.testimonial-name {
+                        margin: 0;
+                        height: 50px;
+                    }
+                }
+            }
+            div.testimonial:nth-child(even) {
+                margin: 0 40px;
+                @media only screen and (max-width: 600px) {
+                    margin: 40px 0;
+                }
+            }
+        }
+    }
+}

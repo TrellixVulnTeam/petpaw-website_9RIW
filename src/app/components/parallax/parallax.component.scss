@@ -1,0 +1,49 @@
+@import '../../styles/global.scss';
+section {
+    display: block;
+    div.parallax {
+        background-color: $color-bg-primary;
+        background-image: url(../../../assets/parallax/parallax.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        z-index: -1;
+    }
+    div.parallax-sections {
+        width: calc(100% - 80px);
+        padding: 80px 40px 0;
+        div.parallax-section {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            margin-bottom: 80px;
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+            }
+            div.parallax-text {
+                border-radius: 16px;
+                border: 2px solid rgba(255, 255, 255, 0.3);
+                padding: 40px;
+            }
+        }
+        div.parallax-section:nth-child(odd) {
+            margin-left: 40%;
+            @media only screen and (max-width: 600px) {
+                margin-left: 0;
+            }
+        }
+        div.parallax-section:nth-child(even) {
+            margin-right: 40%;
+            @media only screen and (max-width: 600px) {
+                margin-right: 0;
+            }
+        }
+        div.parallax-section:last-child {
+            margin-bottom: calc(100vh - 80px);
+        }
+    }
+}

@@ -1,0 +1,35 @@
+<section class="hero">
+    <div class="app-width">
+        <div class="hero-contact">
+            <div class="contact-info">
+                <h1>Get in touch!</h1>
+                <div class="contact-info-box">
+                    <h2>
+                        <a aria-label="Telephone number" href="tel:01234567890">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <span>01234 567890</span>
+                        </a>
+                    </h2>
+                    <h2>
+                        <a aria-label="Email address" href="mailto:info@petpaw.com">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <span>info@petpaw.com</span>
+                        </a>
+                    </h2>
+                    <h2>
+                        <a aria-label="Location" onclick="mapFunction()">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <span>1 College Street, College Green, Bristol BS1&#160;5TL</span>
+                        </a>
+                    </h2>
+                </div>
+                <button aria-label="Contact Us" id="myBtn" onclick="modalFunction()">Contact form</button>
+            </div>
+            <app-contact-form></app-contact-form>
+        </div>
+    </div>
+</section>
+<section id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d159067.52561474976!2d-2.7308014238676064!3d51.46861938291213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4871836681b3d861%3A0x8ee4b22e4b9ad71f!2sBristol!5e0!3m2!1sen!2suk!4v1646068711362!5m2!1sen!2suk"
+        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
